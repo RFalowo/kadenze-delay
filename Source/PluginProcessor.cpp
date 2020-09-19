@@ -22,10 +22,7 @@ NewProjectAudioProcessor::NewProjectAudioProcessor()
                        )
 #endif
 {
-    mCircularBufferLeft = nullptr;
-    mCircularBufferRight = nullptr;
     mCircularBufferWritePointer = 0;
-    mCircularBufferLength = 0;
     mCircularBufferReadPointer = 0.0f;
     mTimeParam = new juce::AudioParameterFloat("time","Delay Time",0.0f,MAX_DELAY_TIME,0.5f);
     addParameter(mTimeParam);
@@ -33,15 +30,7 @@ NewProjectAudioProcessor::NewProjectAudioProcessor()
 
 NewProjectAudioProcessor::~NewProjectAudioProcessor()
 {
-    if (mCircularBufferLeft != nullptr){
-        delete [] mCircularBufferLeft;
-        mCircularBufferLeft = nullptr;
-    }
 
-    if (mCircularBufferRight != nullptr){
-        delete [] mCircularBufferRight;
-        mCircularBufferRight = nullptr;
-    }
 }
 
 //==============================================================================
@@ -112,16 +101,10 @@ void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
 
-    mCircularBufferLength = sampleRate * MAX_DELAY_TIME;
+    mCircularBuffer.setSize(2, sampleRate * MAX_DELAY_TIME);
+    mCircularBuffer.clear();
 
 
-    if (mCircularBufferLeft == nullptr){
-        mCircularBufferLeft = new float[mCircularBufferLength];
-    }
-
-    if (mCircularBufferRight == nullptr){
-        mCircularBufferRight = new float[mCircularBufferLength];
-    }
 
     mCircularBufferWritePointer = 0;
 
@@ -179,30 +162,28 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
 
-    float* LeftChannel = buffer.getWritePointer(0);
-    float* RightChannel = buffer.getWritePointer(1);
 
 
     for (int i = 0; i < buffer.getNumSamples(); i++){
 
-        mCircularBufferLeft[mCircularBufferWritePointer] = LeftChannel[i];
-        mCircularBufferRight[mCircularBufferWritePointer] = RightChannel[i];
+        mCircularBuffer.setSample(0,mCircularBufferWritePointer,buffer.getSample(0,i));
+        mCircularBuffer.setSample(1,mCircularBufferWritePointer,buffer.getSample(1,i));
 
         mDelayTimeInSamples = static_cast<float>(getSampleRate()) * (*mTimeParam);
         mCircularBufferReadPointer = static_cast<float>(mCircularBufferWritePointer) - mDelayTimeInSamples;
 
         if (mCircularBufferReadPointer < 0){
-            mCircularBufferReadPointer += mCircularBufferLength;
+            mCircularBufferReadPointer += mCircularBuffer.getNumSamples();
         }
 
         const int readindex = static_cast<int>(mCircularBufferReadPointer);
 
-        buffer.addSample(0,i,mCircularBufferLeft[readindex]);
-        buffer.addSample(1,i,mCircularBufferRight[readindex]);
+        buffer.addSample(0,i,mCircularBuffer.getSample(0,readindex));
+        buffer.addSample(1,i,mCircularBuffer.getSample(1,readindex));
 
         mCircularBufferWritePointer++;
 
-        if (mCircularBufferWritePointer >= mCircularBufferLength){
+        if (mCircularBufferWritePointer >= mCircularBuffer.getNumSamples()){
             mCircularBufferWritePointer = 0;
         }
 

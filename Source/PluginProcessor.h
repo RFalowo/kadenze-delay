@@ -56,12 +56,11 @@ public:
 
 private:
     int mCircularBufferWritePointer;
-    int mCircularBufferLength;
     float mDelayTimeInSamples;
     juce::AudioParameterFloat* mTimeParam;
     float mCircularBufferReadPointer;
-    float* mCircularBufferLeft;
-    float* mCircularBufferRight;
+    juce::AudioBuffer<float> mCircularBuffer;
+
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NewProjectAudioProcessor)
