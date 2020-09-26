@@ -61,6 +61,14 @@ private:
     float mCircularBufferReadPointer;
     juce::AudioBuffer<float> mCircularBuffer;
 
+    float mFeedbackLeft;
+    float mFeedbackRight;
+
+
+
+    juce::AudioParameterFloat* mDryWetParam;
+    juce::AudioParameterFloat* mFeedbcakParam;
+
 
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (NewProjectAudioProcessor)

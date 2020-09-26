@@ -24,8 +24,15 @@ NewProjectAudioProcessor::NewProjectAudioProcessor()
 {
     mCircularBufferWritePointer = 0;
     mCircularBufferReadPointer = 0.0f;
-    mTimeParam = new juce::AudioParameterFloat("time","Delay Time",0.0f,MAX_DELAY_TIME,0.5f);
+    mTimeParam = new juce::AudioParameterFloat("time","Delay Time",0.01f,MAX_DELAY_TIME,0.5f);
     addParameter(mTimeParam);
+
+    addParameter(mDryWetParam = new juce::AudioParameterFloat("dry/wet", "Dry/Wet", 0.0f, 1.0f, 0.5f ));
+
+    addParameter(mFeedbcakParam = new juce::AudioParameterFloat("fdbck", "Feedback", 0.0f, 0.98f, 0.5f));
+    mFeedbackLeft = 0.0f;
+    mFeedbackRight = 0.0f;
+
 }
 
 NewProjectAudioProcessor::~NewProjectAudioProcessor()
@@ -166,24 +173,29 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
 
     for (int i = 0; i < buffer.getNumSamples(); i++){
 
-        mCircularBuffer.setSample(0,mCircularBufferWritePointer,buffer.getSample(0,i));
-        mCircularBuffer.setSample(1,mCircularBufferWritePointer,buffer.getSample(1,i));
+        mCircularBuffer.setSample(0,mCircularBufferWritePointer,buffer.getSample(0,i) + mFeedbackLeft); //Copy values from audio input buffer into circular buffer
+        mCircularBuffer.setSample(1,mCircularBufferWritePointer,buffer.getSample(1,i) + mFeedbackRight);
 
-        mDelayTimeInSamples = static_cast<float>(getSampleRate()) * (*mTimeParam);
+        mDelayTimeInSamples = static_cast<float>(getSampleRate()) * (*mTimeParam); //Convert delay from time to samples and adjust circular read pointer accordingly
         mCircularBufferReadPointer = static_cast<float>(mCircularBufferWritePointer) - mDelayTimeInSamples;
 
-        if (mCircularBufferReadPointer < 0){
+        if (mCircularBufferReadPointer < 0){                               // Loop read pointer index so it is always behind the write pointer by the correct delay
             mCircularBufferReadPointer += mCircularBuffer.getNumSamples();
         }
 
-        const int readindex = static_cast<int>(mCircularBufferReadPointer);
+        const int readindex = static_cast<int>(mCircularBufferReadPointer); // Casting to int
 
-        buffer.addSample(0,i,mCircularBuffer.getSample(0,readindex));
-        buffer.addSample(1,i,mCircularBuffer.getSample(1,readindex));
+        float delay_sample_left = mCircularBuffer.getSample(0,readindex);
+        float delay_sample_right = mCircularBuffer.getSample(1,readindex);
 
+        mFeedbackLeft = delay_sample_left * *mFeedbcakParam;
+        mFeedbackRight = delay_sample_right * *mFeedbcakParam;
+
+        buffer.setSample(0,i,buffer.getSample(0,i) * *mDryWetParam + delay_sample_left * (1 - *mDryWetParam)); // Add delayed samples to output
+        buffer.setSample(1,i,buffer.getSample(1,i) * *mDryWetParam + delay_sample_right * (1 - *mDryWetParam));
         mCircularBufferWritePointer++;
 
-        if (mCircularBufferWritePointer >= mCircularBuffer.getNumSamples()){
+        if (mCircularBufferWritePointer >= mCircularBuffer.getNumSamples()){   //Circular buffer
             mCircularBufferWritePointer = 0;
         }
 
