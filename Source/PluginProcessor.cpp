@@ -33,6 +33,7 @@ NewProjectAudioProcessor::NewProjectAudioProcessor()
     mFeedbackLeft = 0.0f;
     mFeedbackRight = 0.0f;
 
+    mdelayTimesmooth = 0;
 }
 
 NewProjectAudioProcessor::~NewProjectAudioProcessor()
@@ -114,6 +115,7 @@ void NewProjectAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
 
 
     mCircularBufferWritePointer = 0;
+    mdelayTimesmooth = *mTimeParam;
 
 }
 
@@ -173,20 +175,32 @@ void NewProjectAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
 
     for (int i = 0; i < buffer.getNumSamples(); i++){
 
+        mdelayTimesmooth = mdelayTimesmooth - 0.001 * (mdelayTimesmooth - *mTimeParam);
+
         mCircularBuffer.setSample(0,mCircularBufferWritePointer,buffer.getSample(0,i) + mFeedbackLeft); //Copy values from audio input buffer into circular buffer
         mCircularBuffer.setSample(1,mCircularBufferWritePointer,buffer.getSample(1,i) + mFeedbackRight);
 
-        mDelayTimeInSamples = static_cast<float>(getSampleRate()) * (*mTimeParam); //Convert delay from time to samples and adjust circular read pointer accordingly
+        mDelayTimeInSamples = static_cast<float>(getSampleRate()) * (mdelayTimesmooth); //Convert delay from time to samples and adjust circular read pointer accordingly
         mCircularBufferReadPointer = static_cast<float>(mCircularBufferWritePointer) - mDelayTimeInSamples;
 
         if (mCircularBufferReadPointer < 0){                               // Loop read pointer index so it is always behind the write pointer by the correct delay
             mCircularBufferReadPointer += mCircularBuffer.getNumSamples();
         }
 
-        const int readindex = static_cast<int>(mCircularBufferReadPointer); // Casting to int
+        int readPointerX  = (int)mCircularBufferReadPointer;
+        int readPointerX1 = readPointerX + 1;
+        if (readPointerX1 >= mCircularBuffer.getNumSamples()){
+            readPointerX1 -= mCircularBuffer.getNumSamples();
+        }
 
-        float delay_sample_left = mCircularBuffer.getSample(0,readindex);
-        float delay_sample_right = mCircularBuffer.getSample(1,readindex);
+        float readPointerFloat = (float)mCircularBufferReadPointer - readPointerX;
+
+       // const int readindex = static_cast<int>(mCircularBufferReadPointer); // Casting to int
+
+
+
+        float delay_sample_left = line_interp(mCircularBuffer.getSample(0,readPointerX),mCircularBuffer.getSample(0,readPointerX1),readPointerFloat);
+        float delay_sample_right = line_interp(mCircularBuffer.getSample(1,readPointerX),mCircularBuffer.getSample(1,readPointerX1),readPointerFloat);
 
         mFeedbackLeft = delay_sample_left * *mFeedbcakParam;
         mFeedbackRight = delay_sample_right * *mFeedbcakParam;
@@ -232,4 +246,9 @@ void NewProjectAudioProcessor::setStateInformation (const void* data, int sizeIn
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new NewProjectAudioProcessor();
+}
+
+float NewProjectAudioProcessor::line_interp(float sample_x, float sample_x1, float inPhase)
+{
+    return (1 - inPhase) * sample_x + inPhase *sample_x1;
 }

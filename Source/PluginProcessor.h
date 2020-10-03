@@ -55,6 +55,10 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
+
+    float line_interp(float sample_x, float sample_x1, float inPhase);
+    float mdelayTimesmooth;
+
     int mCircularBufferWritePointer;
     float mDelayTimeInSamples;
     juce::AudioParameterFloat* mTimeParam;
