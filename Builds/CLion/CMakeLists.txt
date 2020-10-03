@@ -13,7 +13,7 @@ endif (NOT CMAKE_BUILD_TYPE)
 
 if (APPLE)
 
-project ("KadenzeDeeLeigh" C CXX)
+project ("KadenzeChorus" C CXX)
 
 add_library (VST3 MODULE
     "../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3_Wrapper.cpp"
@@ -3064,8 +3064,8 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3084,16 +3084,16 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3101,7 +3101,7 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3131,7 +3131,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST3/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
@@ -3203,8 +3203,8 @@ target_compile_definitions (AU PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3223,16 +3223,16 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3240,7 +3240,7 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3296,7 +3296,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/Components/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
@@ -3369,8 +3369,8 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3389,16 +3389,16 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3406,7 +3406,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3431,7 +3431,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_INFOPLIST_FILE "${CMAKE_CURRENT_SOURCE_DIR}/Debug-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Debug-Info-Standalone_Plugin.plist"
@@ -3495,8 +3495,8 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3515,16 +3515,16 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3532,7 +3532,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3556,7 +3556,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     XCODE_ATTRIBUTE_GCC_DYNAMIC_NO_PIC NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_INSTALL_PATH "@executable_path/../Frameworks"
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_SKIP_INSTALL YES
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
@@ -3629,8 +3629,8 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3649,16 +3649,16 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3666,7 +3666,7 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3697,7 +3697,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/VST3/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
@@ -3769,8 +3769,8 @@ target_compile_definitions (AU PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3789,16 +3789,16 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3806,7 +3806,7 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3863,7 +3863,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
     XCODE_ATTRIBUTE_INSTALL_PATH "$(HOME)/Library/Audio/Plug-Ins/Components/"
     XCODE_ATTRIBUTE_LIBRARY_STYLE Bundle
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
@@ -3936,8 +3936,8 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -3956,16 +3956,16 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -3973,7 +3973,7 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -3999,7 +3999,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_INFOPLIST_FILE "${CMAKE_CURRENT_SOURCE_DIR}/Release-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_INFOPLIST_PREPROCESS NO
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Release-Info-Standalone_Plugin.plist"
@@ -4063,8 +4063,8 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
     "JucePlugin_Enable_IAA=0"
-    "JucePlugin_Name=\"KadenzeDeeLeigh\""
-    "JucePlugin_Desc=\"KadenzeDeeLeigh\""
+    "JucePlugin_Name=\"KadenzeChorus\""
+    "JucePlugin_Desc=\"KadenzeChorus\""
     "JucePlugin_Manufacturer=\"yourcompany\""
     "JucePlugin_ManufacturerWebsite=\"\""
     "JucePlugin_ManufacturerEmail=\"\""
@@ -4083,16 +4083,16 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_Vst3Category=\"Fx\""
     "JucePlugin_AUMainType='aufx'"
     "JucePlugin_AUSubType=JucePlugin_PluginCode"
-    "JucePlugin_AUExportPrefix=KadenzeDeeLeighAU"
-    "JucePlugin_AUExportPrefixQuoted=\"KadenzeDeeLeighAU\""
+    "JucePlugin_AUExportPrefix=KadenzeChorusAU"
+    "JucePlugin_AUExportPrefixQuoted=\"KadenzeChorusAU\""
     "JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"
-    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_RTASCategory=0"
     "JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_RTASProductId=JucePlugin_PluginCode"
     "JucePlugin_RTASDisableBypass=0"
     "JucePlugin_RTASDisableMultiMono=0"
-    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"
+    "JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"
     "JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"
     "JucePlugin_AAXProductId=JucePlugin_PluginCode"
     "JucePlugin_AAXCategory=0"
@@ -4100,7 +4100,7 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_AAXDisableMultiMono=0"
     "JucePlugin_IAAType=0x61757278"
     "JucePlugin_IAASubType=JucePlugin_PluginCode"
-    "JucePlugin_IAAName=\"yourcompany: KadenzeDeeLeigh\""
+    "JucePlugin_IAAName=\"yourcompany: KadenzeChorus\""
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
@@ -4125,7 +4125,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     XCODE_ATTRIBUTE_GCC_GENERATE_DEBUGGING_SYMBOLS NO
     XCODE_ATTRIBUTE_GCC_VERSION com.apple.compilers.llvm.clang.1_0
     XCODE_ATTRIBUTE_INSTALL_PATH "@executable_path/../Frameworks"
-    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeDeeLeigh
+    XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_SKIP_INSTALL YES
     XCODE_ATTRIBUTE_USE_HEADERMAP NO

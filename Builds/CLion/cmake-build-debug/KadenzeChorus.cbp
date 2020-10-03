@@ -2,34 +2,34 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="KadenzeDeeLeigh"/>
+		<Option title="KadenzeChorus"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AU">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.component/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.component/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -66,8 +66,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -86,16 +86,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -103,12 +103,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -119,15 +119,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AU"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AU"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="AU/fast">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.component/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.component/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -164,8 +164,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -184,16 +184,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -201,12 +201,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -217,25 +217,25 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AU/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 AU/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STANDALONE_PLUGIN">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.app/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.app/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -272,8 +272,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -292,16 +292,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -309,12 +309,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -325,15 +325,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 STANDALONE_PLUGIN"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 STANDALONE_PLUGIN"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STANDALONE_PLUGIN/fast">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.app/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.app/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="0"/>
 				<Option compiler="gcc"/>
@@ -370,8 +370,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -390,16 +390,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -407,12 +407,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -423,15 +423,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 STANDALONE_PLUGIN/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 STANDALONE_PLUGIN/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SHARED_CODE">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/libNewProject.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/libNewProject.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -469,8 +469,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -489,16 +489,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -506,12 +506,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -522,15 +522,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SHARED_CODE"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SHARED_CODE"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="SHARED_CODE/fast">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/libNewProject.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/libNewProject.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
@@ -568,8 +568,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -588,16 +588,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -605,12 +605,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -621,15 +621,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SHARED_CODE/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 SHARED_CODE/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VST3">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.vst3/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.vst3/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -666,8 +666,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -686,16 +686,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -703,12 +703,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -719,15 +719,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VST3"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VST3"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VST3/fast">
-				<Option output="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.vst3/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug"/>
+				<Option output="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.vst3/Contents/MacOS/NewProject" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="3"/>
 				<Option compiler="gcc"/>
@@ -764,8 +764,8 @@
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
-					<Add option="-DJucePlugin_Name=&quot;KadenzeDeeLeigh&quot;"/>
-					<Add option="-DJucePlugin_Desc=&quot;KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
+					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Manufacturer=&quot;yourcompany&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerWebsite=&quot;&quot;"/>
 					<Add option="-DJucePlugin_ManufacturerEmail=&quot;&quot;"/>
@@ -784,16 +784,16 @@
 					<Add option="-DJucePlugin_Vst3Category=&quot;Fx&quot;"/>
 					<Add option="-DJucePlugin_AUMainType=&apos;aufx&apos;"/>
 					<Add option="-DJucePlugin_AUSubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_AUExportPrefix=KadenzeDeeLeighAU"/>
-					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeDeeLeighAU&quot;"/>
+					<Add option="-DJucePlugin_AUExportPrefix=KadenzeChorusAU"/>
+					<Add option="-DJucePlugin_AUExportPrefixQuoted=&quot;KadenzeChorusAU&quot;"/>
 					<Add option="-DJucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode"/>
-					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_RTASCategory=0"/>
 					<Add option="-DJucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_RTASProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_RTASDisableBypass=0"/>
 					<Add option="-DJucePlugin_RTASDisableMultiMono=0"/>
-					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh"/>
+					<Add option="-DJucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus"/>
 					<Add option="-DJucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode"/>
 					<Add option="-DJucePlugin_AAXProductId=JucePlugin_PluginCode"/>
 					<Add option="-DJucePlugin_AAXCategory=0"/>
@@ -801,12 +801,12 @@
 					<Add option="-DJucePlugin_AAXDisableMultiMono=0"/>
 					<Add option="-DJucePlugin_IAAType=0x61757278"/>
 					<Add option="-DJucePlugin_IAASubType=JucePlugin_PluginCode"/>
-					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeDeeLeigh&quot;"/>
+					<Add option="-DJucePlugin_IAAName=&quot;yourcompany: KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
-					<Add directory="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/../../JuceLibraryCode"/>
+					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_plugin_client"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
@@ -817,10 +817,10 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VST3/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 VST3/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -5243,95 +5243,95 @@
 		<Unit filename="/Applications/JUCE/modules/juce_gui_extra/native/juce_win32_WebBrowserComponent.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/PkgInfo">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/PkgInfo">
 			<Option target="AU"/>
 			<Option target="VST3"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/cmake-build-debug/NewProject.rsrc">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/cmake-build-debug/NewProject.rsrc">
 			<Option target="AU"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/JuceHeader.h">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/JuceHeader.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/JucePluginDefines.h">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/JucePluginDefines.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_basics.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_basics.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_devices.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_devices.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_formats.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_formats.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_AU.r">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_AU.r">
 			<Option target="AU"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm">
 			<Option target="AU"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm">
 			<Option target="AU"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp">
 			<Option target="STANDALONE_PLUGIN"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_VST3.cpp">
 			<Option target="VST3"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_processors.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_processors.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_audio_utils.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_audio_utils.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_core.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_core.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_data_structures.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_data_structures.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_events.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_events.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_graphics.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_graphics.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_gui_basics.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_gui_basics.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/JuceLibraryCode/include_juce_gui_extra.mm">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/JuceLibraryCode/include_juce_gui_extra.mm">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Source/PluginEditor.cpp">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/PluginEditor.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Source/PluginEditor.h">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/PluginEditor.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Source/PluginProcessor.cpp">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/PluginProcessor.cpp">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Source/PluginProcessor.h">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/PluginProcessor.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/CMakeLists.txt">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/Debug-Info-AU.plist">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/Debug-Info-AU.plist">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/Debug-Info-Standalone_Plugin.plist">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/Debug-Info-Standalone_Plugin.plist">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/remifalowo/Kadenze/KadenzeDelay/NewProject/Builds/CLion/Debug-Info-VST3.plist">
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/Debug-Info-VST3.plist">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

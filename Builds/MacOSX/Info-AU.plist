@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.KadenzeDeeLeigh</string>
+    <string>com.yourcompany.KadenzeChorus</string>
     <key>CFBundleName</key>
-    <string>KadenzeDeeLeigh</string>
+    <string>KadenzeChorus</string>
     <key>CFBundleDisplayName</key>
-    <string>KadenzeDeeLeigh</string>
+    <string>KadenzeChorus</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleSignature</key>
@@ -29,11 +29,11 @@
     <array>
       <dict>
         <key>name</key>
-        <string>yourcompany: KadenzeDeeLeigh</string>
+        <string>yourcompany: KadenzeChorus</string>
         <key>description</key>
-        <string>KadenzeDeeLeigh</string>
+        <string>KadenzeChorus</string>
         <key>factoryFunction</key>
-        <string>KadenzeDeeLeighAUFactory</string>
+        <string>KadenzeChorusAUFactory</string>
         <key>manufacturer</key>
         <string>Manu</string>
         <key>type</key>

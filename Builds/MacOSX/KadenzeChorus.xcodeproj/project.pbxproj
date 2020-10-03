@@ -561,7 +561,7 @@
 			children = (
 				D3DA1855AC22DC2493FF05F8,
 			);
-			name = KadenzeDeeLeigh;
+			name = KadenzeChorus;
 			sourceTree = "<group>";
 		};
 		88C53086DC1B0CCB76215112 = {
@@ -755,8 +755,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -775,16 +775,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -792,7 +792,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -812,7 +812,7 @@
 				LIBRARY_STYLE = Bundle;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-bundle -lNewProject";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = vst3;
@@ -866,8 +866,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -886,16 +886,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -903,7 +903,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -924,7 +924,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-bundle -lNewProject";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = vst3;
@@ -978,8 +978,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -998,16 +998,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1015,7 +1015,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1036,7 +1036,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = component;
@@ -1090,8 +1090,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -1110,16 +1110,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1127,7 +1127,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1149,7 +1149,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-bundle -lNewProject";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 				WRAPPER_EXTENSION = component;
@@ -1201,8 +1201,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -1221,16 +1221,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1238,7 +1238,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1255,7 +1255,7 @@
 				INFOPLIST_PREPROCESS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lNewProject";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 			};
@@ -1306,8 +1306,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -1326,16 +1326,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1343,7 +1343,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1361,7 +1361,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				OTHER_LDFLAGS = "-lNewProject";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				USE_HEADERMAP = NO;
 			};
@@ -1413,8 +1413,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -1433,16 +1433,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1450,7 +1450,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1465,7 +1465,7 @@
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
@@ -1518,8 +1518,8 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Enable_IAA=0",
-					"JucePlugin_Name=\\\"KadenzeDeeLeigh\\\"",
-					"JucePlugin_Desc=\\\"KadenzeDeeLeigh\\\"",
+					"JucePlugin_Name=\\\"KadenzeChorus\\\"",
+					"JucePlugin_Desc=\\\"KadenzeChorus\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
 					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
@@ -1538,16 +1538,16 @@
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
 					"JucePlugin_AUMainType='aufx'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
-					"JucePlugin_AUExportPrefix=KadenzeDeeLeighAU",
-					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeDeeLeighAU\\\"",
+					"JucePlugin_AUExportPrefix=KadenzeChorusAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"KadenzeChorusAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_RTASCategory=0",
 					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
 					"JucePlugin_RTASDisableBypass=0",
 					"JucePlugin_RTASDisableMultiMono=0",
-					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeDeeLeigh",
+					"JucePlugin_AAXIdentifier=com.yourcompany.KadenzeChorus",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
 					"JucePlugin_AAXCategory=0",
@@ -1555,7 +1555,7 @@
 					"JucePlugin_AAXDisableMultiMono=0",
 					"JucePlugin_IAAType=0x61757278",
 					"JucePlugin_IAASubType=JucePlugin_PluginCode",
-					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeDeeLeigh\\\"",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ KadenzeChorus\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
@@ -1571,7 +1571,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeDeeLeigh;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.KadenzeChorus;
 				PRODUCT_NAME = "NewProject";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
@@ -1704,8 +1704,8 @@
 				5FBB12EF3C926E01A1F2131F,
 				9329ED0788F3E05210E11C61,
 			);
-			name = "KadenzeDeeLeigh - All";
-			productName = KadenzeDeeLeigh;
+			name = "KadenzeChorus - All";
+			productName = KadenzeChorus;
 		};
 		E07BA75EB5E6AD2C04DC2C40 = {
 			isa = XCConfigurationList;
@@ -1762,8 +1762,8 @@
 			dependencies = (
 				322A4060E6F7C27864798513,
 			);
-			name = "KadenzeDeeLeigh - VST3";
-			productName = KadenzeDeeLeigh;
+			name = "KadenzeChorus - VST3";
+			productName = KadenzeChorus;
 			productReference = B28628705904578419305E3D;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -1833,8 +1833,8 @@
 			dependencies = (
 				9AF06446429B7BC218D1D143,
 			);
-			name = "KadenzeDeeLeigh - AU";
-			productName = KadenzeDeeLeigh;
+			name = "KadenzeChorus - AU";
+			productName = KadenzeChorus;
 			productReference = 052B82457AD1AC7B040C5B89;
 			productType = "com.apple.product-type.bundle";
 		};
@@ -1893,8 +1893,8 @@
 			dependencies = (
 				325D503CA8E919799263708C,
 			);
-			name = "KadenzeDeeLeigh - Standalone Plugin";
-			productName = KadenzeDeeLeigh;
+			name = "KadenzeChorus - Standalone Plugin";
+			productName = KadenzeChorus;
 			productReference = 29F5B6ABB471A295589F7B28;
 			productType = "com.apple.product-type.application";
 		};
@@ -1937,8 +1937,8 @@
 			);
 			buildRules = ( );
 			dependencies = ( );
-			name = "KadenzeDeeLeigh - Shared Code";
-			productName = KadenzeDeeLeigh;
+			name = "KadenzeChorus - Shared Code";
+			productName = KadenzeChorus;
 			productReference = 0EE270235D5A53B8EF682565;
 			productType = "com.apple.product-type.library.static";
 		};

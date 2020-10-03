@@ -8,11 +8,11 @@
     <key>CFBundleIconFile</key>
     <string></string>
     <key>CFBundleIdentifier</key>
-    <string>com.yourcompany.KadenzeDeeLeigh</string>
+    <string>com.yourcompany.KadenzeChorus</string>
     <key>CFBundleName</key>
-    <string>KadenzeDeeLeigh</string>
+    <string>KadenzeChorus</string>
     <key>CFBundleDisplayName</key>
-    <string>KadenzeDeeLeigh</string>
+    <string>KadenzeChorus</string>
     <key>CFBundlePackageType</key>
     <string>BNDL</string>
     <key>CFBundleSignature</key>

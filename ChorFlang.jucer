@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<JUCERPROJECT id="jE5Sen" name="KadenzeDeeLeigh" projectType="audioplug" useAppConfig="0"
+<JUCERPROJECT id="jE5Sen" name="KadenzeChorus" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
-  <MAINGROUP id="CKKBIz" name="KadenzeDeeLeigh">
+  <MAINGROUP id="CKKBIz" name="KadenzeChorus">
     <GROUP id="{1AB4D522-BF5F-366E-72D9-DA8D3078C9E4}" name="Source">
       <FILE id="u4c5h3" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
