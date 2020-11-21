@@ -73,6 +73,10 @@
 			isa = PBXBuildFile;
 			fileRef = B1F1DF4AD9A6B5E7FAE5AA24;
 		};
+		6B122731011DB47CFE34628A = {
+			isa = PBXBuildFile;
+			fileRef = 3D56F8792507EA647B8B4848;
+		};
 		9CF224D88549C624B456525F = {
 			isa = PBXBuildFile;
 			fileRef = 455EF7A2C89D27B6AD9D23C0;
@@ -250,6 +254,13 @@
 			name = QuartzCore.framework;
 			path = System/Library/Frameworks/QuartzCore.framework;
 			sourceTree = SDKROOT;
+		};
+		3D56F8792507EA647B8B4848 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.cpp.cpp;
+			name = WaveFormCmp.cpp;
+			path = ../../Source/WaveFormCmp.cpp;
+			sourceTree = "SOURCE_ROOT";
 		};
 		4415E601818EF02216DAB419 = {
 			isa = PBXFileReference;
@@ -524,6 +535,13 @@
 			path = "../../JuceLibraryCode/include_juce_data_structures.mm";
 			sourceTree = "SOURCE_ROOT";
 		};
+		F48C894779D3C66BDE246502 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			name = WaveFormCmp.h;
+			path = ../../Source/WaveFormCmp.h;
+			sourceTree = "SOURCE_ROOT";
+		};
 		FCAF8A251B80B4A5F43B9B68 = {
 			isa = PBXFileReference;
 			lastKnownFileType = file;
@@ -548,6 +566,8 @@
 		D3DA1855AC22DC2493FF05F8 = {
 			isa = PBXGroup;
 			children = (
+				3D56F8792507EA647B8B4848,
+				F48C894779D3C66BDE246502,
 				455EF7A2C89D27B6AD9D23C0,
 				559C89AC2E77925CAFD80283,
 				6B40FE97A1EA8724D0415D21,
@@ -1911,6 +1931,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B122731011DB47CFE34628A,
 				9CF224D88549C624B456525F,
 				915FE009AD164D486CF73F1F,
 				E2CD67BD2688248C8C633A3E,

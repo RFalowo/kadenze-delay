@@ -21,6 +21,11 @@ public:
     KadenzeChorusFlangerAudioProcessor();
     ~KadenzeChorusFlangerAudioProcessor() override;
 
+    enum class Type {
+        Chorus,
+        Flanger,
+    };
+
     //==============================================================================
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
     void releaseResources() override;
@@ -53,25 +58,43 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
+    juce::AudioBuffer<float>& getAudioBuffer ();
+    float&  getReadPointer ();
 
 private:
+
+    static constexpr int kNumChannels = 2;
+    static constexpr float kMaxDelayTime = 1.0f;
+    static constexpr int kSafetyBlockSizeScalar = 2;//?
+
+    float mLFOPhase;
 
     float line_interp(float sample_x, float sample_x1, float inPhase);
     float mdelayTimesmooth;
 
     int mCircularBufferWritePointer;
     float mDelayTimeInSamples;
-    juce::AudioParameterFloat* mTimeParam;
+
+
+
+    juce::AudioParameterFloat* mDepthParam;
+    juce::AudioParameterFloat* mRateParam;
+    juce::AudioParameterFloat* mPhaseOffsetParam;
+
+    juce::AudioParameterInt* mTypeParam;
+
     float mCircularBufferReadPointer;
     juce::AudioBuffer<float> mCircularBuffer;
+    juce::AudioBuffer<float> mFeedback;
 
     float mFeedbackLeft;
     float mFeedbackRight;
 
 
 
-    juce::AudioParameterFloat* mDryWetParam;
-    juce::AudioParameterFloat* mFeedbcakParam;
+    juce::AudioParameterFloat* mDryParam;
+    juce::AudioParameterFloat* mWetParam;
+    juce::AudioParameterFloat* mFeedbackParam;
 
 
     //==============================================================================

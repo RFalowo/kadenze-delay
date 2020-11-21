@@ -5322,6 +5322,12 @@
 		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/PluginProcessor.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/WaveFormCmp.cpp">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Source/WaveFormCmp.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

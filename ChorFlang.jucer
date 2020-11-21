@@ -4,6 +4,8 @@
               addUsingNamespaceToJuceHeader="0" displaySplashScreen="1" jucerFormatVersion="1">
   <MAINGROUP id="CKKBIz" name="KadenzeChorus">
     <GROUP id="{1AB4D522-BF5F-366E-72D9-DA8D3078C9E4}" name="Source">
+      <FILE id="VXodR3" name="WaveFormCmp.cpp" compile="1" resource="0" file="Source/WaveFormCmp.cpp"/>
+      <FILE id="ZJ1lEM" name="WaveFormCmp.h" compile="0" resource="0" file="Source/WaveFormCmp.h"/>
       <FILE id="u4c5h3" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="U7bigj" name="PluginProcessor.h" compile="0" resource="0"

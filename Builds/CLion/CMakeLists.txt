@@ -169,6 +169,8 @@ set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juc
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_Standalone.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_library (SHARED_CODE STATIC
+    "../../Source/WaveFormCmp.cpp"
+    "../../Source/WaveFormCmp.h"
     "../../Source/PluginProcessor.cpp"
     "../../Source/PluginProcessor.h"
     "../../Source/PluginEditor.cpp"
@@ -1597,6 +1599,7 @@ add_library (SHARED_CODE STATIC
     "../../JuceLibraryCode/JucePluginDefines.h"
 )
 
+set_source_files_properties ("../../Source/WaveFormCmp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginProcessor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../Source/PluginEditor.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_basics/audio_play_head/juce_AudioPlayHead.h" PROPERTIES HEADER_FILE_ONLY TRUE)
