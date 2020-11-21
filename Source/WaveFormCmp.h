@@ -15,7 +15,7 @@
 //==============================================================================
 /*
 */
-class WaveFormCmp  : public juce::Component
+class WaveFormCmp  : public juce::Component, private juce::Timer
 {
 public:
     WaveFormCmp();
@@ -23,6 +23,8 @@ public:
 
     void paint (juce::Graphics&) override;
     void resized() override;
+
+    void timerCallback() override;
 
 private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (WaveFormCmp)

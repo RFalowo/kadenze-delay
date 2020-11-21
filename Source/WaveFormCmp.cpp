@@ -16,11 +16,12 @@ WaveFormCmp::WaveFormCmp()
 {
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
-
+startTimerHz(60);
 }
 
 WaveFormCmp::~WaveFormCmp()
 {
+    stopTimer();
 }
 
 void WaveFormCmp::paint (juce::Graphics& g)
@@ -39,8 +40,12 @@ void WaveFormCmp::paint (juce::Graphics& g)
 
     g.setColour (juce::Colours::white);
     g.setFont (14.0f);
-    g.drawText ("WaveFormCmp", getLocalBounds(),
+    auto now = juce::Time::currentTimeMillis();
+
+
+    g.drawText (juce::String(now), getLocalBounds(),
                 juce::Justification::centred, true);   // draw some placeholder text
+
 }
 
 void WaveFormCmp::resized()
@@ -48,4 +53,10 @@ void WaveFormCmp::resized()
     // This method is where you should set the bounds of any child
     // components that your component contains..
 
+}
+
+void  WaveFormCmp::timerCallback() {
+    // get samples from editor
+
+    repaint();
 }
