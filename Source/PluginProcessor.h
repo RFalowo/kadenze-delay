@@ -84,7 +84,6 @@ private:
 
     juce::AudioParameterInt* mTypeParam;
 
-    float mCircularBufferReadPointer;
     juce::AudioBuffer<float> mCircularBuffer;
     juce::AudioBuffer<float> mFeedback;
 

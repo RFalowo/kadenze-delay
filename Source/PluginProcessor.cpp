@@ -24,7 +24,6 @@ KadenzeChorusFlangerAudioProcessor::KadenzeChorusFlangerAudioProcessor()
 #endif
 {
   mCircularBufferWritePointer = 0;
-  mCircularBufferReadPointer = 0.0f;
 
     addParameter(mDepthParam =
       new juce::AudioParameterFloat("mDepthParam", "Depth", 0.0f, 1.0f, 0.5f));
@@ -316,7 +315,5 @@ juce::AudioBuffer<float>& KadenzeChorusFlangerAudioProcessor::getAudioBuffer() {
 }
 
 float KadenzeChorusFlangerAudioProcessor::getReadPointer() {
-    DBG(mCircularBufferReadPointer);
-    return mCircularBufferReadPointer;
-
+    return mCircularBufferWritePointer;
 }

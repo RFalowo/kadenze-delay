@@ -47,6 +47,11 @@ void WaveFormCmp::paint (juce::Graphics& g)
     g.drawText (juce::String(mReadPointer), getLocalBounds(),
                 juce::Justification::centred, true);   // draw some placeholder text
 
+    float xPosition = juce::jmap(mBufferPosition,0.0f, static_cast<float>(getWidth()));
+    g.drawVerticalLine(xPosition,0.0f, static_cast<float>(getHeight()));
+
+    // TODO add amplitude level to draw function
+
 }
 
 void WaveFormCmp::resized()
@@ -56,8 +61,15 @@ void WaveFormCmp::resized()
 
 }
 
+void WaveFormCmp::updateData() {
+    auto& buffer = mProcessor.getAudioBuffer();
+    mReadPointer = mProcessor.getReadPointer();
+    mBufferPosition = mReadPointer / static_cast<float >(buffer.getNumSamples());
+
+}
+
 void  WaveFormCmp::timerCallback() {
     // get samples from editor
-    mReadPointer = mProcessor.getReadPointer();
+    updateData();
     repaint();
 }
