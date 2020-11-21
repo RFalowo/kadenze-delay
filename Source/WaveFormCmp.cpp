@@ -12,10 +12,12 @@
 #include "WaveFormCmp.h"
 
 //==============================================================================
-WaveFormCmp::WaveFormCmp()
+WaveFormCmp::WaveFormCmp(KadenzeChorusFlangerAudioProcessor& processor):
+mProcessor(processor)
 {
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
+
 startTimerHz(60);
 }
 
@@ -40,10 +42,9 @@ void WaveFormCmp::paint (juce::Graphics& g)
 
     g.setColour (juce::Colours::white);
     g.setFont (14.0f);
-    auto now = juce::Time::currentTimeMillis();
 
 
-    g.drawText (juce::String(now), getLocalBounds(),
+    g.drawText (juce::String(mReadPointer), getLocalBounds(),
                 juce::Justification::centred, true);   // draw some placeholder text
 
 }
@@ -57,6 +58,6 @@ void WaveFormCmp::resized()
 
 void  WaveFormCmp::timerCallback() {
     // get samples from editor
-
+    mReadPointer = mProcessor.getReadPointer();
     repaint();
 }

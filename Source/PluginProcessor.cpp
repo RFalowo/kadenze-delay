@@ -258,6 +258,9 @@ void KadenzeChorusFlangerAudioProcessor::processBlock(
             const auto dry = buffer.getSample(c, b) * dryAmount;
             const auto wet = delayedSample * wetAmount;
             buffer.setSample(c, b, dry + wet);
+            // TODO write to monitoring buffer
+            // mOutputbuffer.setsample(c, b, dry + wet);
+
         }
 
         // update our LFO phase
@@ -310,4 +313,10 @@ float KadenzeChorusFlangerAudioProcessor::line_interp(float sample_x, float samp
 
 juce::AudioBuffer<float>& KadenzeChorusFlangerAudioProcessor::getAudioBuffer() {
     return mCircularBuffer;
+}
+
+float KadenzeChorusFlangerAudioProcessor::getReadPointer() {
+    DBG(mCircularBufferReadPointer);
+    return mCircularBufferReadPointer;
+
 }

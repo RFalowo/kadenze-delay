@@ -18,7 +18,7 @@ KadenzeChorusFlangerAudioProcessorEditor::KadenzeChorusFlangerAudioProcessorEdit
     // editor's size to whatever you need it to be.
 
 
-    mWaveFormComponent = std::make_unique<WaveFormCmp>();
+    mWaveFormComponent = std::make_unique<WaveFormCmp>(p);
     addAndMakeVisible(*mWaveFormComponent);
 
 

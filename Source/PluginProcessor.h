@@ -59,7 +59,8 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
     juce::AudioBuffer<float>& getAudioBuffer ();
-    float&  getReadPointer ();
+    float  getReadPointer ();
+
 
 private:
 

@@ -11,6 +11,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "PluginProcessor.h"
 
 //==============================================================================
 /*
@@ -18,7 +19,7 @@
 class WaveFormCmp  : public juce::Component, private juce::Timer
 {
 public:
-    WaveFormCmp();
+    WaveFormCmp(KadenzeChorusFlangerAudioProcessor& processor);
     ~WaveFormCmp() override;
 
     void paint (juce::Graphics&) override;
@@ -27,5 +28,9 @@ public:
     void timerCallback() override;
 
 private:
+
+    float mReadPointer = 0.0f;
+    KadenzeChorusFlangerAudioProcessor& mProcessor;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (WaveFormCmp)
+
 };
