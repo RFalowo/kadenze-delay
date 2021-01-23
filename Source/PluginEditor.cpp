@@ -162,7 +162,7 @@ void KadenzeChorusFlangerAudioProcessorEditor::paint (juce::Graphics& g)
 
 void KadenzeChorusFlangerAudioProcessorEditor::resized()
 {
-    mWaveFormComponent->setBounds(320,600,200,200);
+    mWaveFormComponent->setBounds(50,550,800,200);
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
 }

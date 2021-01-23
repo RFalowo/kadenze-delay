@@ -8,7 +8,7 @@ if (NOT CMAKE_BUILD_TYPE)
 endif (NOT CMAKE_BUILD_TYPE)
 
 ###############################################################################
-# Xcode (MacOSX)
+# Xcode (macOS)
 ###############################################################################
 
 if (APPLE)
@@ -87,7 +87,6 @@ add_library (AU MODULE
     "../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/AU/juce_AUv3_Wrapper.mm"
     "../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm"
     "../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AU_Shared.h"
     "../../JuceLibraryCode/include_juce_audio_plugin_client_AU.r"
     "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm"
     "../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm"
@@ -155,7 +154,6 @@ set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juc
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/AU/juce_AUv3_Wrapper.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_1.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/juce_audio_plugin_client_AU_2.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AU_Shared.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_executable (STANDALONE_PLUGIN
     "../../../../../../../Applications/JUCE/modules/juce_audio_plugin_client/Standalone/juce_StandaloneFilterApp.cpp"
@@ -445,73 +443,76 @@ add_library (SHARED_CODE STATIC
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/stream_decoder.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/stream_encoder.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/win_utf8_io.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_51.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_stereo.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/floor/floor_books.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/uncoupled/res_books_uncoupled.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/floor_all.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_8.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_11.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_16.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_44.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_8.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_16.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44p51.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44u.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_8.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_11.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_16.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_22.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_32.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44p51.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44u.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_X.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/analysis.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/backends.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/block.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codec_internal.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor0.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor1.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/highlevel.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/info.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup_data.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mapping0.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/masking.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/misc.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/os.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/res0.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/scales.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/sharedbook.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.h"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/synthesis.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisenc.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisfile.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.c"
-    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_51.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_stereo.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/floor/floor_books.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/uncoupled/res_books_uncoupled.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/floor_all.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_8.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_11.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_16.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_44.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_8.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_16.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44p51.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44u.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_8.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_11.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_16.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_22.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_32.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44p51.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44u.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_X.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/analysis.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/backends.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/block.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codec_internal.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor0.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor1.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/highlevel.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/info.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup_data.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mapping0.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/masking.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/os.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/res0.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/scales.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/sharedbook.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/synthesis.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisenc.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisfile.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.c"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/README.md"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/bitwise.c"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/codec.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/config_types.h"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/crctable.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/framing.c"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/Ogg Vorbis Licence.txt"
     "../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/ogg.h"
@@ -665,6 +666,7 @@ add_library (SHARED_CODE STATIC
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/public.sdk/README.md"
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/LICENSE.txt"
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/README.md"
+    "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AU_Shared.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.h"
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.mm"
     "../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp"
@@ -1872,73 +1874,76 @@ set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juc
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/stream_decoder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/stream_encoder.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/flac/win_utf8_io.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_stereo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/floor/floor_books.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/uncoupled/res_books_uncoupled.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/floor_all.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_11.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44p51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44u.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_11.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_22.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_32.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44p51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44u.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_X.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/analysis.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/backends.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/block.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codec_internal.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor1.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/highlevel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/info.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup_data.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mapping0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/masking.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/misc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/os.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/res0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/scales.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/sharedbook.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/synthesis.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisenc.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisfile.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.c" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_stereo.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/floor/floor_books.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/uncoupled/res_books_uncoupled.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/floor_all.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_11.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44p51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44u.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_8.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_11.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_16.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_22.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_32.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44p51.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44u.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_X.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/analysis.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/backends.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/block.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codec_internal.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor1.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/highlevel.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/info.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup_data.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mapping0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/masking.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/os.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/res0.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/scales.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/sharedbook.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/synthesis.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisenc.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisfile.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.c" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/README.md" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/bitwise.c" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/codec.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/config_types.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/crctable.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/framing.c" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/Ogg Vorbis Licence.txt" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/ogg.h" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -2092,6 +2097,7 @@ set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juc
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/public.sdk/README.md" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/LICENSE.txt" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK/README.md" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AU_Shared.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.mm" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties ("../../../../../../../Applications/JUCE/modules/juce_audio_processors/format_types/juce_LADSPAPluginFormat.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
@@ -3037,20 +3043,9 @@ target_include_directories (VST3 PRIVATE
 target_compile_definitions (VST3 PRIVATE
     "_DEBUG=1"
     "DEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3066,6 +3061,14 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=1"
+    "JucePlugin_Build_AU=0"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=0"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3108,6 +3111,9 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (VST3 PRIVATE
@@ -3120,6 +3126,7 @@ set_target_properties (VST3 PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3137,6 +3144,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Debug-Info-VST3.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
@@ -3155,6 +3163,7 @@ target_link_libraries (VST3 PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3176,20 +3185,9 @@ target_include_directories (AU PRIVATE
 target_compile_definitions (AU PRIVATE
     "_DEBUG=1"
     "DEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3205,6 +3203,14 @@ target_compile_definitions (AU PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=0"
+    "JucePlugin_Build_AU=1"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=0"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3247,6 +3253,9 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (AU PRIVATE
@@ -3285,6 +3294,7 @@ set_target_properties (AU PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3302,6 +3312,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Debug-Info-AU.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
@@ -3321,6 +3332,7 @@ target_link_libraries (AU PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3342,20 +3354,9 @@ target_include_directories (STANDALONE_PLUGIN PRIVATE
 target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "_DEBUG=1"
     "DEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3371,6 +3372,14 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=0"
+    "JucePlugin_Build_AU=0"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=1"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3413,6 +3422,9 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (STANDALONE_PLUGIN PRIVATE
@@ -3425,6 +3437,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3437,6 +3450,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Debug-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     MACOSX_BUNDLE TRUE
@@ -3452,6 +3466,7 @@ target_link_libraries (STANDALONE_PLUGIN PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3467,21 +3482,9 @@ target_include_directories (SHARED_CODE PRIVATE
 target_compile_definitions (SHARED_CODE PRIVATE
     "_DEBUG=1"
     "DEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
-    "JUCE_SHARED_CODE=1"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3497,6 +3500,14 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=1"
+    "JucePlugin_Build_AU=1"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=1"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3539,6 +3550,10 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
+    "JUCE_SHARED_CODE=1"
 )
 
 target_compile_options (SHARED_CODE PRIVATE
@@ -3551,6 +3566,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3563,6 +3579,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_SKIP_INSTALL YES
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
 )
 
 target_link_libraries (SHARED_CODE PRIVATE
@@ -3574,6 +3591,7 @@ target_link_libraries (SHARED_CODE PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3602,20 +3620,9 @@ target_include_directories (VST3 PRIVATE
 target_compile_definitions (VST3 PRIVATE
     "_NDEBUG=1"
     "NDEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3631,6 +3638,14 @@ target_compile_definitions (VST3 PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=1"
+    "JucePlugin_Build_AU=0"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=0"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3673,6 +3688,9 @@ target_compile_definitions (VST3 PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (VST3 PRIVATE
@@ -3686,6 +3704,7 @@ set_target_properties (VST3 PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3703,6 +3722,7 @@ set_target_properties (VST3 PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION vst3
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Release-Info-VST3.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
@@ -3721,6 +3741,7 @@ target_link_libraries (VST3 PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3742,20 +3763,9 @@ target_include_directories (AU PRIVATE
 target_compile_definitions (AU PRIVATE
     "_NDEBUG=1"
     "NDEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3771,6 +3781,14 @@ target_compile_definitions (AU PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=0"
+    "JucePlugin_Build_AU=1"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=0"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3813,6 +3831,9 @@ target_compile_definitions (AU PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (AU PRIVATE
@@ -3852,6 +3873,7 @@ set_target_properties (AU PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -3869,6 +3891,7 @@ set_target_properties (AU PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     XCODE_ATTRIBUTE_WRAPPER_EXTENSION component
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Release-Info-AU.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
@@ -3888,6 +3911,7 @@ target_link_libraries (AU PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -3909,20 +3933,9 @@ target_include_directories (STANDALONE_PLUGIN PRIVATE
 target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "_NDEBUG=1"
     "NDEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -3938,6 +3951,14 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=0"
+    "JucePlugin_Build_AU=0"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=1"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -3980,6 +4001,9 @@ target_compile_definitions (STANDALONE_PLUGIN PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
 )
 
 target_compile_options (STANDALONE_PLUGIN PRIVATE
@@ -3993,6 +4017,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -4005,6 +4030,7 @@ set_target_properties (STANDALONE_PLUGIN PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_BUNDLE_IDENTIFIER com.yourcompany.KadenzeChorus
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
     MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/Release-Info-Standalone_Plugin.plist"
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     MACOSX_BUNDLE TRUE
@@ -4020,6 +4046,7 @@ target_link_libraries (STANDALONE_PLUGIN PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"
@@ -4035,21 +4062,9 @@ target_include_directories (SHARED_CODE PRIVATE
 target_compile_definitions (SHARED_CODE PRIVATE
     "_NDEBUG=1"
     "NDEBUG=1"
-    "JUCER_XCODE_MAC_F6D2F4CF=1"
-    "JUCE_APP_VERSION=1.0.0"
-    "JUCE_APP_VERSION_HEX=0x10000"
-    "JucePlugin_Build_VST=0"
-    "JucePlugin_Build_VST3=1"
-    "JucePlugin_Build_AU=1"
-    "JucePlugin_Build_AUv3=0"
-    "JucePlugin_Build_RTAS=0"
-    "JucePlugin_Build_AAX=0"
-    "JucePlugin_Build_Standalone=1"
-    "JucePlugin_Build_Unity=0"
-    "JUCE_SHARED_CODE=1"
     "JUCE_DISPLAY_SPLASH_SCREEN=1"
     "JUCE_USE_DARK_SPLASH_SCREEN=1"
-    "JUCE_PROJUCER_VERSION=0x60001"
+    "JUCE_PROJUCER_VERSION=0x60005"
     "JUCE_MODULE_AVAILABLE_juce_audio_basics=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_devices=1"
     "JUCE_MODULE_AVAILABLE_juce_audio_formats=1"
@@ -4065,6 +4080,14 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"
     "JUCE_VST3_CAN_REPLACE_VST2=0"
     "JUCE_STRICT_REFCOUNTEDPOINTER=1"
+    "JucePlugin_Build_VST=0"
+    "JucePlugin_Build_VST3=1"
+    "JucePlugin_Build_AU=1"
+    "JucePlugin_Build_AUv3=0"
+    "JucePlugin_Build_RTAS=0"
+    "JucePlugin_Build_AAX=0"
+    "JucePlugin_Build_Standalone=1"
+    "JucePlugin_Build_Unity=0"
     "JucePlugin_Enable_IAA=0"
     "JucePlugin_Name=\"KadenzeChorus\""
     "JucePlugin_Desc=\"KadenzeChorus\""
@@ -4107,6 +4130,10 @@ target_compile_definitions (SHARED_CODE PRIVATE
     "JucePlugin_VSTNumMidiInputs=16"
     "JucePlugin_VSTNumMidiOutputs=16"
     "JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"
+    "JUCER_XCODE_MAC_F6D2F4CF=1"
+    "JUCE_APP_VERSION=1.0.0"
+    "JUCE_APP_VERSION_HEX=0x10000"
+    "JUCE_SHARED_CODE=1"
 )
 
 target_compile_options (SHARED_CODE PRIVATE
@@ -4120,6 +4147,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     OUTPUT_NAME "NewProject"
     CXX_STANDARD 14
     CXX_EXTENSIONS OFF
+    XCODE_ATTRIBUTE_MTL_HEADER_SEARCH_PATHS "/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK ../../JuceLibraryCode /Applications/JUCE/modules /Applications/JUCE/modules/juce_audio_plugin_client"
     XCODE_ATTRIBUTE_CLANG_LINK_OBJC_RUNTIME NO
     XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY ""
     XCODE_ATTRIBUTE_COMBINE_HIDPI_IMAGES YES
@@ -4132,6 +4160,7 @@ set_target_properties (SHARED_CODE PROPERTIES
     XCODE_ATTRIBUTE_PRODUCT_NAME "NewProject"
     XCODE_ATTRIBUTE_SKIP_INSTALL YES
     XCODE_ATTRIBUTE_USE_HEADERMAP NO
+    XCODE_ATTRIBUTE_VALID_ARCHS "i386 x86_64 arm64 arm64e"
 )
 
 target_link_libraries (SHARED_CODE PRIVATE
@@ -4143,6 +4172,7 @@ target_link_libraries (SHARED_CODE PRIVATE
     "-framework CoreAudioKit"
     "-framework CoreMIDI"
     "-framework DiscRecording"
+    "-framework Foundation"
     "-framework IOKit"
     "-framework QuartzCore"
     "-framework WebKit"

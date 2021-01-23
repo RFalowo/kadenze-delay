@@ -36,20 +36,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -65,6 +54,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=0"/>
+					<Add option="-DJucePlugin_Build_AU=1"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=0"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -107,6 +104,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -134,20 +134,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -163,6 +152,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=0"/>
+					<Add option="-DJucePlugin_Build_AU=1"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=0"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -205,6 +202,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -242,20 +242,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -271,6 +260,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=0"/>
+					<Add option="-DJucePlugin_Build_AU=0"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=1"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -313,6 +310,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -340,20 +340,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -369,6 +358,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=0"/>
+					<Add option="-DJucePlugin_Build_AU=0"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=1"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -411,6 +408,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -438,21 +438,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
-					<Add option="-DJUCE_SHARED_CODE=1"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -468,6 +456,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=1"/>
+					<Add option="-DJucePlugin_Build_AU=1"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=1"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -510,6 +506,10 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
+					<Add option="-DJUCE_SHARED_CODE=1"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -537,21 +537,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
-					<Add option="-DJUCE_SHARED_CODE=1"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -567,6 +555,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=1"/>
+					<Add option="-DJucePlugin_Build_AU=1"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=1"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -609,6 +605,10 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
+					<Add option="-DJUCE_SHARED_CODE=1"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -636,20 +636,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -665,6 +654,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=1"/>
+					<Add option="-DJucePlugin_Build_AU=0"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=0"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -707,6 +704,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -734,20 +734,9 @@
 				<Compiler>
 					<Add option="-D_DEBUG=1"/>
 					<Add option="-DDEBUG=1"/>
-					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
-					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
-					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
-					<Add option="-DJucePlugin_Build_VST=0"/>
-					<Add option="-DJucePlugin_Build_VST3=1"/>
-					<Add option="-DJucePlugin_Build_AU=1"/>
-					<Add option="-DJucePlugin_Build_AUv3=0"/>
-					<Add option="-DJucePlugin_Build_RTAS=0"/>
-					<Add option="-DJucePlugin_Build_AAX=0"/>
-					<Add option="-DJucePlugin_Build_Standalone=1"/>
-					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJUCE_DISPLAY_SPLASH_SCREEN=1"/>
 					<Add option="-DJUCE_USE_DARK_SPLASH_SCREEN=1"/>
-					<Add option="-DJUCE_PROJUCER_VERSION=0x60001"/>
+					<Add option="-DJUCE_PROJUCER_VERSION=0x60005"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_basics=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_devices=1"/>
 					<Add option="-DJUCE_MODULE_AVAILABLE_juce_audio_formats=1"/>
@@ -763,6 +752,14 @@
 					<Add option="-DJUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1"/>
 					<Add option="-DJUCE_VST3_CAN_REPLACE_VST2=0"/>
 					<Add option="-DJUCE_STRICT_REFCOUNTEDPOINTER=1"/>
+					<Add option="-DJucePlugin_Build_VST=0"/>
+					<Add option="-DJucePlugin_Build_VST3=1"/>
+					<Add option="-DJucePlugin_Build_AU=0"/>
+					<Add option="-DJucePlugin_Build_AUv3=0"/>
+					<Add option="-DJucePlugin_Build_RTAS=0"/>
+					<Add option="-DJucePlugin_Build_AAX=0"/>
+					<Add option="-DJucePlugin_Build_Standalone=0"/>
+					<Add option="-DJucePlugin_Build_Unity=0"/>
 					<Add option="-DJucePlugin_Enable_IAA=0"/>
 					<Add option="-DJucePlugin_Name=&quot;KadenzeChorus&quot;"/>
 					<Add option="-DJucePlugin_Desc=&quot;KadenzeChorus&quot;"/>
@@ -805,6 +802,9 @@
 					<Add option="-DJucePlugin_VSTNumMidiInputs=16"/>
 					<Add option="-DJucePlugin_VSTNumMidiOutputs=16"/>
 					<Add option="-DJUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone"/>
+					<Add option="-DJUCER_XCODE_MAC_F6D2F4CF=1"/>
+					<Add option="-DJUCE_APP_VERSION=1.0.0"/>
+					<Add option="-DJUCE_APP_VERSION_HEX=0x10000"/>
 					<Add directory="/Applications/JUCE/modules/juce_audio_processors/format_types/VST3_SDK"/>
 					<Add directory="/Users/remifalowo/Kadenze/KadenzeChorus/chorusFLanger/Builds/CLion/../../JuceLibraryCode"/>
 					<Add directory="/Applications/JUCE/modules"/>
@@ -1694,199 +1694,208 @@
 		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/config_types.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/crctable.h">
+			<Option target="SHARED_CODE"/>
+		</Unit>
 		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/framing.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/analysis.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/README.md">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/backends.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/analysis.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/backends.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/bitrate.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/block.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/bitrate.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_51.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/block.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/coupled/res_books_stereo.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_51.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/floor/floor_books.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/coupled/res_books_stereo.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/books/uncoupled/res_books_uncoupled.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/floor/floor_books.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/books/uncoupled/res_books_uncoupled.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codebook.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/codec_internal.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codebook.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/codec_internal.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/envelope.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor0.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/envelope.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/floor1.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor0.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/highlevel.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/floor1.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/info.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/highlevel.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/info.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lookup_data.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lookup_data.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lpc.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lpc.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/lsp.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mapping0.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/lsp.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/masking.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mapping0.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/masking.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/mdct.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/misc.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/mdct.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/floor_all.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_11.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/misc.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_16.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/floor_all.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_44.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_11.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/psych_8.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_16.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_16.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_44.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/psych_8.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44p51.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_16.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_44u.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/residue_8.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44p51.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_11.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_44u.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_16.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/residue_8.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_22.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_11.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_32.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_16.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_22.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44p51.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_32.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_44u.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_8.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44p51.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/modes/setup_X.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_44u.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/os.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_8.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/modes/setup_X.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/psy.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/os.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/registry.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/psy.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/res0.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/scales.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/registry.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/sharedbook.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/res0.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/scales.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/smallft.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/sharedbook.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/synthesis.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisenc.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/smallft.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/vorbisfile.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/synthesis.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.c">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisenc.c">
 			<Option target="SHARED_CODE"/>
 		</Unit>
-		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.2/lib/window.h">
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/vorbisfile.c">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.c">
+			<Option target="SHARED_CODE"/>
+		</Unit>
+		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/libvorbis-1.3.7/lib/window.h">
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Applications/JUCE/modules/juce_audio_formats/codecs/oggvorbis/ogg.h">
@@ -2490,7 +2499,7 @@
 			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Applications/JUCE/modules/juce_audio_processors/format_types/juce_AU_Shared.h">
-			<Option target="AU"/>
+			<Option target="SHARED_CODE"/>
 		</Unit>
 		<Unit filename="/Applications/JUCE/modules/juce_audio_processors/format_types/juce_AudioUnitPluginFormat.h">
 			<Option target="SHARED_CODE"/>
