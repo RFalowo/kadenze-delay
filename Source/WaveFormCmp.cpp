@@ -58,9 +58,10 @@ void WaveFormCmp::paint (juce::Graphics& g)
     path.startNewSubPath(0.0f, getHeight()/2.0f);
 
     auto& buffer = mProcessor.getAudioBuffer();
-
+    float stepSize = (static_cast<float>(buffer.getNumSamples()/2))/ static_cast<float >(getWidth());
     for (int i = 0; i < getWidth() ; ++i) {
-        float AmpValue = buffer.getSample(0, (static_cast<int>(mReadPointer) + i) % buffer.getNumSamples());//get sample value
+        int offset = i * stepSize;
+        float AmpValue = buffer.getSample(0, (static_cast<int>(mReadPointer) + offset) % buffer.getNumSamples());//get sample value
         float yPosition = juce::jmap(AmpValue,-1.0f,1.0f,static_cast<float>(getHeight()), 0.0f); //map to component height
         path.lineTo(i,yPosition);
 
