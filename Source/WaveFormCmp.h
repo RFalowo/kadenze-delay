@@ -29,9 +29,9 @@ public:
 
 private:
 
-    float mReadPointer = 0.0f;
-    float mBufferPosition = 0.0f;
-    float mAmpValue = 0.0f;
+    juce::Path mInputWaveformPath;
+    float mZoomValue = 0.0f;
+
     KadenzeChorusFlangerAudioProcessor& mProcessor;
     void updateData();
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (WaveFormCmp)
