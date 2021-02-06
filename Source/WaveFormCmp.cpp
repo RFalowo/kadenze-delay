@@ -54,6 +54,7 @@ void WaveFormCmp::updateData() {
     auto& buffer = mProcessor.getAudioBuffer();
     const int readPointer = mProcessor.getReadPointer();
 
+    mInputWaveformPath.clear();
     mInputWaveformPath.startNewSubPath(0.0f, getHeight() / 2.0f);
 
     const int width = 4000;
