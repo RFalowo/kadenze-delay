@@ -141,7 +141,21 @@ KadenzeChorusFlangerAudioProcessorEditor::KadenzeChorusFlangerAudioProcessorEdit
     mTypeCmp.setSelectedItemIndex(*typeParam);
     addAndMakeVisible(mTypeCmp);
 
+    //waveform zoom slider
+    mWaveformZoomSlider.setSliderStyle(juce::Slider::RotaryVerticalDrag);
+    mWaveformZoomSlider.setRange(0.1, 1.0);
+    mWaveformZoomSlider.setTextBoxStyle(juce::Slider::TextEntryBoxPosition::TextBoxBelow, true, 200,32);
+    mWaveformZoomSlider.setValue(mWaveFormComponent->getZoom());
+
+
+    mWaveformZoomSlider.onValueChange = [this] { //lambda functon,
+        mWaveFormComponent->setZoom(mWaveformZoomSlider.getValue());
+    };
+
+    this->addAndMakeVisible(mWaveformZoomSlider);
+
     this->setSize (900, 900);
+
 }
 
 KadenzeChorusFlangerAudioProcessorEditor::~KadenzeChorusFlangerAudioProcessorEditor()
@@ -163,6 +177,7 @@ void KadenzeChorusFlangerAudioProcessorEditor::paint (juce::Graphics& g)
 void KadenzeChorusFlangerAudioProcessorEditor::resized()
 {
     mWaveFormComponent->setBounds(50,550,800,200);
+    mWaveformZoomSlider.setBounds(50,350,100,100);
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
 }

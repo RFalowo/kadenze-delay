@@ -27,10 +27,12 @@ public:
 
     void timerCallback() override;
 
+    float getZoom();
+    void setZoom(float zoom);
 private:
 
     juce::Path mInputWaveformPath;
-    float mZoomValue = 0.0f;
+    float mZoomValue = 0.5f;
 
     KadenzeChorusFlangerAudioProcessor& mProcessor;
     void updateData();

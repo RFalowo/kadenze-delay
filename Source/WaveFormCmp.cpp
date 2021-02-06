@@ -57,8 +57,8 @@ void WaveFormCmp::updateData() {
     mInputWaveformPath.clear();
     mInputWaveformPath.startNewSubPath(0.0f, getHeight() / 2.0f);
 
-    const int width = 4000;
-    jassert(width<buffer.getNumSamples());
+    const int width = buffer.getNumSamples() * mZoomValue;
+    jassert(width<=buffer.getNumSamples());
     int start = readPointer - width;
     if (readPointer < width){
         start += buffer.getNumSamples();
@@ -79,4 +79,13 @@ void  WaveFormCmp::timerCallback() {
     // get samples from editor
     updateData();
     repaint();
+}
+
+
+float WaveFormCmp::getZoom(){
+    return mZoomValue;
+}
+
+void WaveFormCmp::setZoom(float zoom){
+    mZoomValue = juce::jlimit(0.1f,1.0f,zoom);
 }

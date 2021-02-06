@@ -54,7 +54,8 @@ private:
 
     juce::AudioBuffer<float>& mCircularBufferRef;
 
-    std::unique_ptr<WaveFormCmp> mWaveFormComponent;
+    std::unique_ptr<WaveFormCmp> mWaveFormComponent; // How does this work?
+    juce::Slider mWaveformZoomSlider;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (KadenzeChorusFlangerAudioProcessorEditor)
 };
